@@ -1,4 +1,4 @@
-package com.shudhlovehost;
+package com.pdfviewer;
 
 import android.app.Activity;
 import android.view.WindowManager;

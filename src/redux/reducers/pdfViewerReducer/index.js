@@ -1,3 +1,8 @@
+import {
+  ADD_BOOKMARKS,
+  REMOVE_BOOKMARKS,
+  SET_BOOKMARKS,
+} from '../../actions/types';
 
 /**
  * @author Lovesh Singh
@@ -5,7 +10,7 @@
  * @description initial states of pdf viewer reducer
  */
 const INITIAL_STATE = {
-  
+  bookmarks: [],
 };
 
 /**
@@ -15,7 +20,27 @@ const INITIAL_STATE = {
  */
 const PdfViewerReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    
+    case SET_BOOKMARKS: {
+      return {
+        ...state,
+        bookmarks: action.payload,
+      };
+    }
+    case ADD_BOOKMARKS: {
+      return {
+        ...state,
+        bookmarks: [...state.bookmarks, action.payload],
+      };
+    }
+    case REMOVE_BOOKMARKS: {
+      return {
+        ...state,
+        bookmarks: state.bookmarks.filter(
+          bookmark => bookmark?.pageNo !== action.payload.pageNo,
+        ),
+      };
+    }
+
     default: {
       return state;
     }

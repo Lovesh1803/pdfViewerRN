@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface ShudhloveHostTests : XCTestCase
+@interface PdfviewerTests : XCTestCase
 
 @end
 
-@implementation ShudhloveHostTests
+@implementation PdfviewerTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL (^)(UIView *view))test
 {

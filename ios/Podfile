@@ -45,7 +45,7 @@ target 'PDFViewer' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'ShudhloveHostTests' do
+  target 'PdfviewerTests' do
     inherit! :complete
     # Pods for testing
   end

@@ -1,4 +1,4 @@
-package com.shudhlovehost;
+package com.pdfviewer;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

@@ -1,4 +1,4 @@
-package com.shudhlovehost;
+package com.pdfviewer;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
@@ -9,7 +9,7 @@ import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactNativeHost;
 import com.facebook.soloader.SoLoader;
 import java.util.List;
-import com.shudhlovehost.ScreenShotPreventionPackage;
+import com.pdfviewer.ScreenShotPreventionPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
